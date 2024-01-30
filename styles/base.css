@@ -20,7 +20,8 @@ header {
 
 header img {
     border-radius: 50%;
-    max-width: 100px;
+    width: 100px;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -80,7 +81,8 @@ h2 {
 }
 
 .card ul {
-    list-style-type: circle;
+    list-style-type: decimal;
+    margin-left: 20px;
 }
 
 
@@ -95,7 +97,6 @@ footer {
 
 nav {
     display: block;
-    
 }
 
 #menu {
@@ -114,11 +115,11 @@ nav {
 }
 
 #menu.open::before {
-	content: "✖️";
+	content: "X";
 }
 
 .navigation {
-	display: flex;
+	display: block;
 	flex-direction: column;
 	list-style: none;
 	background-color: #333;
@@ -154,6 +155,10 @@ iframe {
     #menu.open {
         display: block;
     }
+
+    nav li {
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -163,7 +168,6 @@ iframe {
         grid-template-rows: auto;
         gap: 20px;
         max-width: 100%;
-        align-items: flex-start flex-end;
         margin: 50px;
     }
      
