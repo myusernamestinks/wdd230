@@ -44,15 +44,10 @@ nav li:hover {
     font-size: 20px;
 }
 
-.hero-image img {
-    width: 100%;
-    height: 500px;
-    display: block;
-}
-
 
 .current-events {
     text-align: center;
+    color: #d51315;
 }
 
 .events-container {
@@ -64,12 +59,11 @@ nav li:hover {
     background-color: #ffffff; 
     box-shadow: 0 4px 8px 0 #d40a0a; 
     border-radius: 8px; 
-    padding: 50px; 
-    margin: 10px; 
+    padding: 30px; 
+    margin: 5px; 
     display: inline-block; 
     flex: 1;
 }
-
 
 
 .spotlight {
@@ -81,7 +75,7 @@ nav li:hover {
 
 .spotlight-item {
     
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #d40a0a;
     border-radius: 8px;
     padding: 20px;
     flex: 1;
@@ -114,7 +108,6 @@ nav {
     color: #000;
     position: absolute;
     top: 1rem;
-    right: 1rem;
 }
 
 #menu::before {
@@ -131,9 +124,17 @@ nav {
     background-color: #d51315;
 }
 
+.weather-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 #d40a0a;
+    border-radius: 8px;
+    padding: 50px;
+    margin: 10px;
+    display: inline-block;
+}
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     nav ul {
         display: none;
     }
@@ -141,16 +142,35 @@ nav {
         display: block;
     }
 
+
     #menu.open {
         display: block;
     }
-     
 
+    .large-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        width: 100%;
+    }
+     
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     #menu {
         display: none;
     
+    }
+
+    .large-image {
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+
+    .mobile-image {
+        display: none;
     }
 }
