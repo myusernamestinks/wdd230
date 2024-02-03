@@ -126,7 +126,6 @@ nav {
 }
 
 .weather-card {
-    background-color: #ffffff;
     box-shadow: 0 4px 8px 0 #d40a0a;
     border-radius: 8px;
     padding: 50px;
@@ -135,7 +134,11 @@ nav {
     
 }
 
-
+section.weather-card {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
 
 @media screen and (max-width: 600px) {
     nav ul {
@@ -157,6 +160,7 @@ nav {
     .mobile-image {
         display: block;
         width: 100%;
+        height: 400px;
     }
     
     .spotlight {
