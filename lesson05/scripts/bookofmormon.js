@@ -17,6 +17,8 @@ button.addEventListener('click', function() {
             input.focus();
         });
         
+        
+
         input.value = '';
     }
 });
