@@ -15,14 +15,15 @@ hamButton.addEventListener('click', () => {
     document.querySelector('nav ul').classList.toggle('open');
 });
 
-function darkMode() {
-    let element = document.body;
-    let content = document.getElementById("DarkModetext");
-    element.className = "dark-mode";
-}
-function lightMode() {
-    let element = document.body;
-    let content = document.getElementById("DarkModetext");
-    element.className = "light-mode";
-}
 
+const modeSwitch = document.getElementById("modeSwitch");
+
+modeSwitch.addEventListener("change", function() {
+    const body = document.body;
+
+    if (modeSwitch.checked) {
+        body.classList.add("dark-mode");
+    } else {
+        body.classList.remove("dark-mode");
+    }
+});
