@@ -17,6 +17,7 @@ header {
     padding: 1px;
     background-color: #d51315;
     color: #fff;
+    padding-top: 50px;
 }
 
 nav ul {
@@ -55,7 +56,6 @@ nav li:hover {
 }
 
 .card {
-    background-color: #ffffff; 
     box-shadow: 0 4px 8px 0 #d40a0a; 
     border-radius: 8px; 
     padding: 30px; 
@@ -109,6 +109,7 @@ nav {
     color: #000;
     position: absolute;
     top: 1rem;
+    left: 1rem;
 }
 
 #menu::before {
@@ -138,6 +139,40 @@ section.weather-card {
     justify-content: space-around;
     align-items: center;
     display: flex;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+
+.light-mode-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.dark-mode-btn {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+}
+
+.dark-mode-btn:hover {
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+
+.light-mode-btn:hover {
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
