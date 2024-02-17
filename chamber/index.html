@@ -37,9 +37,13 @@
     </nav>
     
     <main>
-        <div class="hero-image">
-            <img src="images/katy-rice-silos.jpg" alt="A picture of a landmark in Katy, Texas" class="large-image">
-            <img src="images/katy-silos-small.jpg" alt="A picture of a landmark in Katy, Texas" class="mobile-image">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/wdd230-org-small.webp">
+                <source media="(max-width: 680px)" srcset="images/wdd230-org-medium.webp">
+                <source media="(max-width: 960px)" srcset="images/wdd230-org-large.webp">
+                <img src="images/wdd230-org.jpg" alt="A very important meeting of three random people">
+            </picture>
         </div>
 
         <div class="call-to-action">
@@ -69,8 +73,12 @@
         </section>
 
         <section class="weather-card">
-            <h2>Weather information goes here</h2>
-            
+            <h2>Weather</h2>
+            <p>
+            Temperature: <span id="temperature">30 °F</span><br>
+            Wind Speed: <span id="windSpeed">3.01 mph</span><br>
+                        <span id="windChill">Wind Chill: </span>
+        </p>
         </section>
 
         
@@ -87,5 +95,6 @@
         <P id="lastModified"></P>
     </footer>
     <script src="scripts/getweather.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

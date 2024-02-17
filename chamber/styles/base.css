@@ -102,6 +102,20 @@ nav {
     display: flex;
 }
 
+.hero {
+    margin-top: 0px;
+    width: 100%; 
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.hero img {
+    width: 100%; 
+    height: auto; 
+   
+}
+
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -130,15 +144,17 @@ nav {
     box-shadow: 0 4px 8px 0 #d40a0a;
     border-radius: 8px;
     padding: 50px;
-    margin: 10px;
+    margin: 20px;
     display: inline-block;
     
 }
 
 section.weather-card {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .dark-mode {
