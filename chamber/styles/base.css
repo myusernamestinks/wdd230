@@ -221,7 +221,60 @@ input:checked + .slider:before {
     transform: translateX(26px);
   }
 
-  
+.grid-container {
+    display: grid;
+}
+
+.pic1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.pic2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.pic3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.pic4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.pic5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.pic6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.pic1 img,
+.pic2 img,
+.pic3 img,
+.pic4 img,
+.pic5 img,
+.pic6 img {
+    width: 100%;
+    height: auto;
+}
+
+.guess-card {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 0 4px 8px 0 #d40a0a;
+    border-radius: 8px;
+    padding: 50px;
+    
+}
 
 @media screen and (max-width: 600px) {
     nav ul {
