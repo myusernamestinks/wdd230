@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Build</title>
+    <meta name="author" content="Jay Brown">
+    <meta name="description" content="This is Jay Brown's form build for WDD 230 - Web Frontend Development.">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="lesson02/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+</head>
+<body>
+    <header>
+
+        <h1>
+            <img src="images/pictureofme.webp" alt="A picture of me">
+            Jay Brown
+        </h1>
+
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="https://myusernamestinks.github.io/wdd230/" class="active">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main class="card">
+        <form action="record.html" method="get">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" minlength="8" required>
+        
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error-message" id="passwordMismatchError" style="display: none;">Passwords do not match</span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
+            <span class="error-message" id="emailError" style="display: none;">Please enter a valid email address</span>
+
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="ratingOutput.value = pageRating.value">
+            <output id="ratingOutput">5</output>
+
+            <input type="submit" value="Submit">
+            
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span>, Jay Brown, U.S.A </p>
+
+        <P id="lastModified"></P>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getrecords.js"></script>
+    
+</body>
+</html>

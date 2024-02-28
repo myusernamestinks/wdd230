@@ -1,0 +1,52 @@
+.card {
+    width: 70%;
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: lightgrey;
+    border-color: #3498db;
+}
+label {
+    display: block;
+    margin-block: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    color: grey;
+    
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+output {
+    display: block;
+    text-align: center;
+}
+
+
+        main {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
