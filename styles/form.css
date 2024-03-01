@@ -57,3 +57,17 @@ img {
     height: auto;
 }
 
+input::placeholder {
+	font-size: 13px;
+}
+
+#formmessage {
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+#keyphrase:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
