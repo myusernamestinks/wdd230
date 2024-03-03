@@ -1,0 +1,25 @@
+{
+    "wardInformation": {
+        "familyName": "Brown",
+        "moveInDate": "2021-07-31",
+        "numberOfPeople": 3,
+        "visitedByBishopric": true,
+        "familyMembers": [
+        {
+            "name": "Jay Brown",
+            "gender": "Male",
+            "birthdate": "1994-08-12"
+        },
+        {
+            "name": "Hannah Brown",
+            "gender": "Female",
+            "birthdate": "1994-11-26"
+        },
+        {
+            "name": "Tate Brown",
+            "gender": "Female",
+            "birthdate": "2021-09-13"
+      }
+    ]
+    }
+  }
