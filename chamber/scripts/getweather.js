@@ -65,3 +65,5 @@ function storeVisitDate() {
 const lastVisitText = document.getElementById("lastVisit");
 lastVisitText.innerText = getGreeting();
 storeVisitDate();
+
+document.getElementById('form-loaded-time').value = Date.now();
