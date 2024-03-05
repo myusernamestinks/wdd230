@@ -1,0 +1,86 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "lesson01/holygrail.html",
+            "title": "Holy Grail Activity"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/media-query.html",
+            "title": "Media Queries"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "lesson03/chamber-site-plan.html",
+            "title": "Chamber Site Plan"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "BOM Favorite Scripture"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "lesson06/responsive-images.html",
+            "title": "Responsive Images"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/lazyload.html",
+            "title": "Lazy Load"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/bom.html",
+            "title": "Bom Favorite Scripture p.2"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "lesson09/prophets.html",
+            "title": "Prophets"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "lesson10/activity.html",
+            "title": "Activity 09"
+          }
+        ]
+      }
+    ]
+  }
+  
