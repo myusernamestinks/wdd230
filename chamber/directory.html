@@ -35,17 +35,22 @@
             <li><a href="https://myusernamestinks.github.io/wdd230/chamber/join.html">Join</a></li>
         </ul>
     </nav>
-    
+    <div class="view-toggle">
+        <button id="grid-view-btn" onclick="toggleView('grid')">Grid View</button>
+        <button id="list-view-btn" onclick="toggleView('list')">List View</button>
+        </div>
+        <div class="members-container" id="members-container"></div>
     <main>
         
     </main>
+    
     <footer>
         <p>&copy; <span id="currentYear"></span>, Jay Brown, U.S.A | WDD 230 Project | </P>
 
         <P id="lastModified"></P>
     </footer>
     <script src="scripts/getweather.js"></script>
-    <script src="scripts/windchill.js"></script>
+    
     <script src="scripts/directory.js"></script>
 </body>
 </html>
