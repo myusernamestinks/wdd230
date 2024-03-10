@@ -38,7 +38,6 @@ async function displayMembers(view) {
 function toggleView(view) {
   const membersContainer = document.getElementById("members-container");
 
-
   membersContainer.innerHTML = '';
 
   membersContainer.classList.toggle('list-view', view === 'list');
