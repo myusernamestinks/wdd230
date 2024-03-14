@@ -118,8 +118,8 @@
         "lesson": "10",
         "links": [
           {
-            "url": "lesson10/activity.html",
-            "title": "Activity 09"
+            "url": "https://myusernamestinks.github.io/wdd230/lesson10/weather.html",
+            "title": "Weather API"
           }
         ]
       }
