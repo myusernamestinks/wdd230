@@ -123,6 +123,14 @@ nav {
 	right: 1rem;
 }
 
+figure{
+    display: flex;
+    align-items: center;
+}
+
+figcaption {
+    margin-left: 10px;
+}
 
 #menu::before {
     content: "☰";
