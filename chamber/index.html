@@ -50,6 +50,11 @@
             <a href="https://www.katychamber.com/">Join the Katy Chamber of Commerce</a>
         </div>
 
+        <div id="banner" class="banner">
+            <p>Don't forget to attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button id="closeBanner">Close</button>
+        </div>
+
         <section class="current-events">
             <h2>Current Events</h2>
             <div class="events-container">
@@ -58,8 +63,6 @@
                 <div class="card">Event 3</div>
             </div>
         </section>
-
-
 
         <section class="spotlight">
             <div class="spotlight-item">
@@ -74,11 +77,12 @@
 
         <section class="weather-card">
             <h2>Weather</h2>
-            <p>
-            Temperature: <span id="temperature">30 °F</span><br>
-            Wind Speed: <span id="windSpeed">5.01 mph</span><br>
-                        <span id="windChill"></span>
-        </p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <p><span id="current-temp"></span></p>
+                <figcaption></figcaption>
+            </figure>
+            <ul id="forecast-list"></ul>
         </section>
 
         
@@ -95,6 +99,7 @@
         <P id="lastModified"></P>
     </footer>
     <script src="scripts/getweather.js"></script>
+    <script src="scripts/forecast.js"></script>
     <script src="scripts/windchill.js"></script>
 </body>
 </html>
