@@ -533,10 +533,7 @@ iframe {
     .grid-container {
         grid-template-columns: 1fr;
     }
-    .weather-card ul {
-        grid-template-columns: repeat(1, 1fr); 
-      }
-    }
+    
 
     .pic1 {
         grid-column-start: 1;
@@ -607,4 +604,4 @@ iframe {
         display: none;
     }
 
-}
+}}
