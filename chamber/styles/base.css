@@ -94,12 +94,27 @@ nav {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
 }
 
 .hero img {
     width: 100%; 
     height: auto; 
    
+}
+
+.call-to-action {
+    position: absolute;
+    top: 200px; 
+    right: 35px; 
+    background-color: #d51315; 
+    padding: 15px 30px; 
+    border-radius: 5px;
+}
+
+.call-to-action a {
+    color: #fff; 
+    text-decoration: underline; 
 }
 
 #menu {
