@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const forecastList = document.querySelector('#forecast-list'); // Add this line to select the forecast list element
+const forecastList = document.querySelector('#forecast-list'); 
 
 const latitude = 27.80;
 const longitude = -97.30;
@@ -86,3 +86,52 @@ document.addEventListener("DOMContentLoaded", function() {
         //banner.style.display = "none";
     //});
 //});
+
+document.addEventListener('DOMContentLoaded', function() {
+
+fetch('https://myusernamestinks.github.io/wdd230/data/members.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Fetched data:', data); 
+
+    if (data && data.members && Array.isArray(data.members)) {
+      const members = data.members;
+
+      const spotlightMembers = members.filter(member => member.membership_level === 'Gold' || member.membership_level === 'Silver');
+
+      const randomMembers = getRandomMembers(spotlightMembers, 2);
+
+      randomMembers.forEach(member => {
+        displaySpotlightCard(member);
+      });
+    } else {
+      console.error('Data is not in the expected format.');
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+
+function getRandomMembers(members, count) {
+  const shuffled = members.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
+
+function displaySpotlightCard(member) {
+  const spotlightSection = document.getElementById('spotlight-section');
+  const card = document.createElement('div');
+  card.classList.add('spotlight-card');
+  card.innerHTML = `
+    <h3>${member.name}</h3>
+    <p>Membership Level: ${member.membership_level}</p>
+    <p>Email: ${member.website}</p>
+    <p>Phone: ${member.phone}</p>
+  `;
+  spotlightSection.appendChild(card);
+}
+});
