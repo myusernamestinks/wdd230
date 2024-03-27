@@ -16,9 +16,11 @@ h1 {
 }
 
 .navigation {
+    display: block;
     text-align: center;
     background-color: #adeee9;
     padding: 10px;
+    
 }
 
 .navigation ul {
@@ -55,20 +57,32 @@ h1 {
     border-radius: 5px;
 }
 
-
-
 #menu {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
 #menu::before {
-    content: "☰";
+    content: "⬇️ Menu";
+    color: #FFFFFF;
 }
 
 #menu.open::before {
-	content: "X";
+	content: "❌ Menu";
+    color: #FFFFFF;
+}
+
+.active::before {
+    content:"🛵";
+}
+
+.active::after {
+    content:"🛵";
 }
 
 main {
@@ -84,15 +98,33 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+    header {
+        padding-top: 50px;
+    }
     .navigation ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
 
     .navigation li {
-        margin-bottom: 10px;
+        padding: 10px;
     }
 
-   
+    .navigation ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu.open {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 601px) {
+    #menu {
+        display: none;
+    }
+
+
 }
