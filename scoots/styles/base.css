@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #dccfbb;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
 
 header {
     background-color: #3b5998;
@@ -85,6 +89,62 @@ h1 {
     content:"🛵";
 }
 
+.cta-banner {
+    background-color: #3b5998;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cta-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+}
+
+.hero-collage {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.hero-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+    position: relative;
+}
+
+.hero-collage img:hover {
+    filter: grayscale(100%);
+}
+
+.hero-collage img::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.hero-collage img:hover::after {
+    opacity: 1;
+}
+
 main {
     padding: 20px;
 }
@@ -92,9 +152,39 @@ main {
 footer {
     background-color: #3b5998;
     color: #FFFFFF;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 7px;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    border-style: groove;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
 
 
 @media only screen and (max-width: 600px) {
@@ -117,6 +207,10 @@ footer {
 
     #menu.open {
         display: block;
+    }
+
+    .hero-collage img::after {
+        font-size: 12px;
     }
     
 }
