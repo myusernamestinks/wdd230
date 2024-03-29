@@ -23,6 +23,7 @@ function displayWeatherInfo(weatherData) {
     const weatherDescription = weatherData.weather[0].description;
     const weatherIcon = weatherData.weather[0].icon;
 
+
     const weatherInfoElement = document.getElementById("weather-info");
     weatherInfoElement.innerHTML = `
         <div>
@@ -31,20 +32,9 @@ function displayWeatherInfo(weatherData) {
             <p>Temperature: ${currentTemperature}°F</p>
             <p>Humidity: ${currentHumidity}%</p>
             <p>Description: ${weatherDescription}</p>
+           
         </div>
     `;
-}
-
-async function getWeatherForecast() {
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=20.4215&lon=-86.9258&appid=${apiKey}&units=imperial`;
-    try {
-        const response = await fetch(forecastUrl);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching weather forecast:", error);
-        return null;
-    }
 }
 
 async function initWeather() {
@@ -54,4 +44,3 @@ async function initWeather() {
 }
 
 initWeather();
-

@@ -217,6 +217,43 @@ main {
     margin-bottom: 10px;
 }
 
+.weather-card img {
+    display: block;
+    margin: 0 auto; 
+    width: 100px;
+    height: auto; 
+}
+
+.rental-location-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.location-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.location-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.location-list li {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.location-list li strong {
+    font-size: 17px;
+    font-style: italic;
+}
 footer {
     background-color: #3b5998;
     color: #FFFFFF;
