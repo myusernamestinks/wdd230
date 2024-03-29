@@ -254,6 +254,44 @@ main {
     font-size: 17px;
     font-style: italic;
 }
+
+.rental-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.rental-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.rental-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.rental-details {
+    margin-bottom: 10px;
+}
+
+.price-info {
+    margin-bottom: 10px;
+}
+
+.price-reservation {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price-walk-in {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007bff; /* Blue color for walk-in prices */
+}
+
 footer {
     background-color: #3b5998;
     color: #FFFFFF;
