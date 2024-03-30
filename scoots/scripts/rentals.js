@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const rentalsContainer = document.getElementById("rentals-container");
 
-    fetch("rentals.json")
+    fetch("data/rentals.json")
         .then(response => response.json())
         .then(data => {
             data.rentals.forEach(rental => {

@@ -11,7 +11,7 @@
           "half_day": 25,
           "full_day": 35
         },
-        "image_link": "scoots/images/hondametrowebp.webp"
+        "image_link": "images/hondametrowebp.webp"
       },
       {
         "type": "Honda Dio Scooter",
@@ -24,7 +24,7 @@
           "half_day": 35,
           "full_day": 45
         },
-        "image_link": "scoots/images/hondadiowebp.webp"
+        "image_link": "images/hondadiowebp.webp"
       },
       {
         "type": "Honda PCX150 Scooter",
@@ -37,7 +37,7 @@
           "half_day": 45,
           "full_day": 55
         },
-        "image_link": "scoots/images/hondaPcx150webp.webp"
+        "image_link": "images/hondaPcx150webp.webp"
       },
       {
         "type": "Honda Pioneer ATV",
@@ -50,7 +50,7 @@
           "half_day": 60,
           "full_day": 80
         },
-        "image_link": "scoots/images/hondapioneerwebp.webp"
+        "image_link": "images/hondapioneerwebp.webp"
       },
       {
         "type": "Jeep Wrangler - 4 door with a/c",
@@ -63,7 +63,7 @@
           "half_day": 85,
           "full_day": 125
         },
-        "image_link": "scoots/images/4doorjeepwebp.webp"
+        "image_link": "images/4doorjeepwebp.webp"
       },
       {
         "type": "Jeep Wrangler - 2 door",
@@ -76,7 +76,7 @@
           "half_day": 70,
           "full_day": 90
         },
-        "image_link": "scoots/images/2doorjeepwebp.webp"
+        "image_link": "images/2doorjeepwebp.webp"
       }
     ]
   }
