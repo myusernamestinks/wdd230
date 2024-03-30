@@ -287,6 +287,7 @@ main {
 }
 
 .price-reservation {
+    color: #007bff;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -294,7 +295,7 @@ main {
 .price-walk-in {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #007bff;
+    color: red;
 }
 
 footer {
@@ -369,3 +370,17 @@ footer {
     }
 }
 
+@media (min-width: 601px) {
+    #rentals-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #rentals-container {
+        display: block;
+    }
+}
