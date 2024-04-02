@@ -12,4 +12,13 @@ hamButton.addEventListener('click', () => {
     document.querySelector('nav ul').classList.toggle('open');
 });
 
+function validateForm() {
+    var agreeCheckbox = document.getElementById("agree-checkbox");
 
+    if (!agreeCheckbox.checked) {
+        alert("Please agree to the Rental terms and agreement.");
+        return false;
+    }
+    return true;
+    
+}

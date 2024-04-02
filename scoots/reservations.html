@@ -38,7 +38,69 @@
     </nav>
 
     <main>
-        
+        <div class="reservation-container">
+            <div class="card">
+                <h2>Rental Terms and Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+            <div class="card reservation-form">
+                <h2>Rental Details</h2>
+                <form action="#" method="post" onsubmit="return validateForm()">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="period">Period:</label>
+                    <input type="text" id="period" name="period" required>
+
+                    <label for="rental-type">Rental Type:</label>
+                    <select id="rental-type" name="rental-type" required>
+                        <option value="scooter">Honda Metropolitan (49cc) - 1 person</option>
+                        <option value="bike">Honda Dio (110cc) - 2 person</option>
+                        <option value="bike">Honda PCX150 (149cc) - 2 person</option>
+                        <option value="bike">Honda Pioneer 1000 - 4 person</option>
+                        <option value="bike">Jeep Wrangler (4 door - AC - Manual) - 5 person</option>
+                        <option value="bike">Jeep Wrangler  (2 door - No AC - Manual) - 4 person</option>
+                        
+                    </select>
+
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="state-country">Home State or Country:</label>
+                    <input type="text" id="state-country" name="state-country" required>
+
+                    <label for="cruise-line">Cruise Line (Optional):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
+
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+
+                    <input type="checkbox" id="agree-checkbox" required>
+                    <label for="agree-checkbox">I agree to the terms and agreements.</label>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
