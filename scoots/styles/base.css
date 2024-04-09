@@ -221,7 +221,33 @@ main {
     height: auto; 
 }
 
+#weather-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
+#max-temp {
+    margin-right: 10px;
+}
+
+#close-banner {
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#close-banner:hover,
+#close-banner:active {
+    background-color: #45a049;
+}
 
 .rental-location-card {
     background-color: #ffffff;
